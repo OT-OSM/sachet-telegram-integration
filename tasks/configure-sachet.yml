@@ -14,11 +14,10 @@
     group: "{{ sachet_group }}"
     mode: 0755
 
-- name: Configure service file  
+- name: Configure service file
   template:
     src: sachet.service.j2
     dest: /etc/systemd/system/sachet.service
     owner: "{{ sachet_user }}"
     group: "{{ sachet_group }}"
     mode: '0755'
-
