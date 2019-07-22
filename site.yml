@@ -1,0 +1,6 @@
+---
+- hosts: sachet
+  user: "{{ user }}"
+  become: true
+  roles:
+    - sachet-telegram-integration
